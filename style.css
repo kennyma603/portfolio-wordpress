@@ -1,0 +1,350 @@
+/*
+Theme Name: KM 2012
+Author URI: http://kennyma.ca
+Theme URI:
+Description: portfolio theme
+Author: Kenny Ma
+Version: 1.0
+Tags: white, black, blue, light, two-columns, fixed-width
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/* Reset browser styles
+------------------------------------------ */
+* {margin: 0; padding: 0}
+html {min-height: 100%;}
+body {background: #fff; color: #444; font: 0.75em/1.5 "Arial", "Helvetica", sans-serif; }
+[class] {list-style: none; padding: 0}
+h1, h2, h3, h4, h5, h6 {font-size: 1em}
+dt {font-weight: 700}
+table {border-collapse: collapse}
+img {border: none; vertical-align: middle}
+a {color: #6c97d0; text-decoration: none; outline: none; cursor: pointer}
+a:hover {color: #85c300; text-decoration: underline}
+textarea, input, select, option, optgroup, button {font: 1em "Arial", "Helvetica", sans-serif}
+button, [type="radio"], [type="checkbox"], [type="submit"], [type="button"], [type="reset"], label[for], select {cursor: pointer}
+input, select, textarea {outline: none}
+fieldset {overflow: hidden; border: none;}
+legend {display: none;}
+
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"]>input[type="button"]::-moz-focus-inner {padding: 0; border: none}
+
+/* Custom fonts
+------------------------------------------ */
+@font-face {font-family: 'PTSans'; src: url('fonts/pts55f-webfont.eot'); src: url('fonts/pts55f-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/pts55f-webfont.woff') format('woff'), url('fonts/pts55f-webfont.ttf') format('truetype'), url('fonts/pts55f-webfont.svg#PTSansRegular') format('svg'); font-weight: normal; font-style: normal;}
+@font-face {font-family: 'PTSansBold'; src: url('fonts/pts75f-webfont.eot'); src: url('fonts/pts75f-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/pts75f-webfont.woff') format('woff'), url('fonts/pts75f-webfont.ttf') format('truetype'), url('fonts/pts75f-webfont.svg#PTSansBold') format('svg'); font-weight: normal; font-style: normal;}
+
+/* Global Styles
+------------------------------------------ */
+
+h1 {margin: 0 0 0.75em; padding-bottom: 10px; color: #0049ac; font: normal 1.833em "PTSans",sans-serif;}
+h2 {margin: 1em 0; padding-bottom: 5px; font: normal 1.333em "PTSansBold",sans-serif;}
+h2 a {color: #444;}
+h2 a:hover {color: #0049ac; text-decoration: none;}
+h3 {margin: 1em 0 -0.5em; color: #000; font: normal 1.25em "PTSans",sans-serif;}
+h4 {margin: 1em 0 0; font: normal 1.167em "PTSansBold",sans-serif;}
+h5 {margin: 1em 0 0; font-size: 1.083em; font-weight: bold;}
+h6 {margin: 1em 0 0; color: #999; font-size: 1em;}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {font-family: "PTSansBold",sans-serif;}
+blockquote {margin: 1.5em 0; padding: 10px 20px; border: 1px solid #ccc; background: #eff4fc; font-style: italic;}
+blockquote p {color: #42628f;}
+sub, sup {line-height: 1em;}
+ul li, ol li {margin: 5px 20px;}
+dl {overflow: hidden; margin: 1em 0; }
+dt {float: left; clear: left; width: 150px; margin: 0 0 1em; padding: 0; font-weight: bold;}
+dd {width: 500px; margin: 0 0 1em 150px; }
+p {margin: 1em 0;}
+table {margin: 1em auto; border: 1px solid #cacaca;}
+table th, table th[class] {padding: 5px 10px; border: 1px solid #cacaca; background: #e6e6e6;}
+table td, table td[class] {padding: 5px 10px; border: 1px solid #cacaca;}
+table tr.alternate td {background: #eff4fc;}
+
+form, form[class] {margin: 1.5em 0; padding: 10px 20px; border: 1px solid #ccc; background: #eff4fc;}
+label {float: left; clear: left; width: 150px; padding: 4px 0; font-weight: bold;}
+input, select {width: 220px; margin: 5px 0; padding: 4px 10px; border: 1px solid #cacaca; background: #fff; vertical-align: middle; }
+select option {padding: 0 5px; }
+input[type="radio"], input[type="checkbox"], input[type="submit"] {width: auto;}
+span.required {padding: 0 5px; color: #ff6000; font-weight: bold; font-size: 1.333em;}
+textarea {width: 400px; min-width: 400px; max-width: 400px; height: 100px; margin: 5px 0; padding: 5px 10px; border: 1px solid #cacaca; background: #fff; }
+p.form-submit, p.form-allowed-tags {margin-left: 150px;}
+button, input[type="submit"] {height: 24px; padding: 0 15px; border: 1px solid #ccc; background: #85c300 url("images/button.png") repeat-x top; color: #fff; font-weight: bold; font-family: "PTSans", sans-serif; line-height: 24px; text-shadow: #6a9313 1px 1px 1px; vertical-align: middle;}
+
+.cf:before,
+.cf:after {
+    content:"";
+    display:table;
+}
+.cf:after {
+    clear:both;
+}
+/* For IE 6/7 (trigger hasLayout) */
+.cf {
+    zoom:1;
+}
+
+.left{float: left;}
+.right{float: right;}
+
+.blue-button{
+	
+}
+	.blue-button a{
+		display: inline-block;
+		padding: 3px 15px;
+		color:#fff;
+		font-weight: bold;
+		background: #6C97D0;
+		border-radius: 5px;
+	}
+
+/* Main Layout
+------------------------------------------ */
+body { width: 100%; background: #fff;}
+
+.overlay{
+	height: 100%; width: 100%;
+	background: url("images/overlay.png") 0 0;
+	position: fixed;
+	top: 0; left: 0;
+	z-index: -990;
+}
+.fullscreen{
+	height: 100%; width: 100%;
+	position: fixed;
+	top: 0; left: 0;
+	z-index: -999;
+}
+.fullscreen img{width: 100%; height: 100%;}
+
+.mainWrapper{
+	width: 980px;
+	margin: 0 auto;
+}
+/* home page specific style*/
+.home .sidebar, .page .sidebar{display:none;}
+.home .main, .page .main{width: 920px;}
+
+.mainmenu {float: left; padding: 0 0px; margin-left: 10px;
+		background: #000 url("images/menu-top.png") top repeat-x; 
+		height: 80px;
+		border-radius: 0 0 5px 5px;
+		}
+.mainmenu>ul {list-style: none; margin: 0; padding: 0;}
+.mainmenu>ul>li {float: left; position: relative; overflow: hidden; margin: 0; padding: 0;}
+.mainmenu>ul>li:hover {overflow: visible; position: relative; z-index: 50;}
+.mainmenu>ul>li>a {float: left; height: 78px; padding: 0 12px 2px; color: #fff; 
+			font-family: "PTSansBold",sans-serif; line-height: 78px; 
+			text-decoration: none; text-transform: uppercase;
+			}
+.mainmenu>ul>li>a:hover, .mainmenu>ul>li:hover>a, .mainmenu>ul>li.current-menu-item>a, .mainmenu>ul>li.current_page_item>a {padding-bottom: 0; background: #000; border-bottom: 2px solid #85c300; text-decoration: none;}
+.mainmenu>ul>li.current-menu-item>a, .mainmenu>ul>li.current_page_item>a {background: transparent;}
+.mainmenu>ul>li ul {position: absolute; left: 0; top: 80px; width: 150px; list-style: none; margin: 0; background: #000;}
+.mainmenu>ul>li ul li {float: none; position: relative; overflow: hidden; margin: 0; padding: 0;}
+.mainmenu>ul>li ul li:hover {overflow: visible;}
+.mainmenu>ul>li ul li a {display: block; padding: 3px 12px; border-top: 1px solid #333; color: #ccc; font-family: "PTSansBold",sans-serif;height:40px; line-height: 40px;}
+.mainmenu>ul>li ul li a:hover, .mainmenu>ul>li ul li:hover>a {background: #000; color: #fff; text-decoration: none;}
+.mainmenu>ul>li ul li:first-child>a {border-top: none;}
+.mainmenu>ul>li ul li ul {top: 0; left: 150px; background: #333;}
+.mainmenu>ul>li ul li ul a {border-top: 1px solid #444;}
+.header {padding: 0px 0 0px; height: 80px; margin-bottom: 20px;}
+.header p {margin: 0;}
+.header p.title {
+	margin: 0; padding: 0 10px; color: #000;
+	font: normal 2.083em/1em "PTSansBold",sans-serif;
+	height: 80px;
+	background: #000;
+	float: left;
+	border-radius: 0 0 5px 5px;
+	}
+.header p.title a {color: #fff; font-family: "PTSansBold",sans-serif; position: relative; top: 25px;}
+.header p.title a:hover {color: #fff; text-decoration: none;}
+.header p.tagline {margin: 0; padding: 0; font-family: "PTSans",sans-serif;display: none}
+
+.header form {float: right; width: 245px; height: 25px; margin: 10px 5px 0 50px; padding: 0; border: none; background: url("images/search.png"); text-align: right; box-shadow: 0 0 5px #e3e8f0; display: none;}
+.header form button {overflow: hidden; width: 27px; height: 24px; margin: 0; padding: 0; border: none; background: transparent; text-indent: -50em; vertical-align: middle;}
+.header form input {width: 205px; height: 22px; margin: 0; padding: 0 5px; border: none; background: transparent; color: #888; line-height: 22px; vertical-align: middle;}
+
+.home .content, .page .content {background: #fff;}
+.content {
+	overflow: hidden;	
+	padding: 30px;
+	background: #fff url("images/bg-content.png") 15px 0 repeat-y;
+	border-radius: 5px;
+}
+.main {
+	float: left; 
+	overflow: hidden; 
+	width: 470px;
+	}
+.main .searchform {width: 245px; height: 25px; margin: 10px 5px 0 0; padding: 0; border: none; background: transparent url("images/search.png"); text-align: right; box-shadow: 0 0 5px #e3e8f0;}
+.main .searchform button {overflow: hidden; width: 27px; height: 24px; margin: 0; padding: 0; border: none; background: transparent; text-indent: -50em; vertical-align: middle;}
+.main .searchform input {width: 205px; height: 22px; margin: 0; padding: 0 5px; border: none; background: transparent; color: #888; line-height: 22px; vertical-align: middle;}
+.main label {float: none;}
+
+
+.Portfolio .content{background: #fff;}
+.Portfolio .main{
+	width: 100%;
+	float: none;
+}
+.Portfolio .imageWrapper{
+	width: 458px;
+	float: left;
+	overflow: hidden;
+}
+	.Portfolio .imageWrapper img{
+		width: 100%;
+		border: 1px solid #cecece;
+	}
+	
+.top-note{
+	margin-bottom: 30px;
+	border-bottom: 2px solid #6C97D0;
+	padding: 0 0 10px 0;
+}
+	.top-note .note{
+		margin-left: 25px;
+	}
+	.top-note .thumb{
+		border: 1px solid #6C97D0;
+	}
+
+.sidebar {float: right; width: 275px; padding: 60px 0 50px 20px; margin-left: 20px;}
+
+.footer {
+	padding: 0 0;
+	background: none;
+	margin: 1.5em 0 1em;
+	text-shadow: 3px 3px 10px #000;
+	color: #fff;
+}
+.footer>div {overflow: hidden; width: 940px; margin: 0 auto; padding: 5px 0;}
+.footer p {margin: 0em 0 1em; font-size: 0.917em; line-height: 1.5em; text-align: center;}
+.footer p.powered {font-size: 0.833em;}
+.footer a {color: #fff;}
+
+.footer ul {overflow: hidden; display: block; width: 960px; padding: 0; border: 1px solid #f0f0f0; background: #000 url("images/footer-menu.png") 0 0 repeat-x; text-align: center; box-shadow: 0 0 5px #777; display: none;}
+.footer ul li {display: inline; margin: 0; padding: 0;}
+.footer ul li:first-child {border-left: none;}
+.footer ul a {display: inline-block; height: 20px; padding: 0 10px; color: #f8f8f8; font: 400 0.917em/20px "PTSans",sans-serif;}
+.footer ul a:hover {background: #777; color: #fff; text-decoration: none;}
+.footer ul ul {display: none;}
+
+
+/* sidebar
+------------------------------------------ */
+.widget {margin-bottom: 1.5em;}
+.sidebar h3 {margin-top: 0; padding: 0 10px 10px; background: url("images/headers.png") -2500px bottom no-repeat; color: #616161; font-size: 1.25em;}
+.sidebar ul {list-style: none; margin: 1.5em 0 1.5em 20px; padding: 0;}
+.sidebar ul li {margin: 0; padding: 3px 0 3px 20px; background: url("images/arrow1.gif") 0 8px no-repeat; color: #969696;}
+.sidebar ul li.current-menu-item, .sidebar ul li.current_page_item, .sidebar ul li.current-cat {font-weight: bold;}
+.sidebar ul li a {color: #6c97d0;}
+.sidebar ul li a:hover {color: #85c300; text-decoration: none;}
+.sidebar ul li a:visited {color: #afbdd0;}
+.sidebar ul li ul {margin: 5px 0 -5px;}
+.sidebar ul ul li {background-image: url("images/arrow2.gif");}
+.sidebar ul ul ul li {background-image: url("images/arrow3.gif");}
+.sidebar form {float: right; width: 245px; height: 25px; margin: 1.5em 20px; padding: 0; border: none; background: url("images/search.png"); text-align: right; box-shadow: 0 0 5px #e3e8f0;}
+.sidebar form button {overflow: hidden; width: 27px; height: 24px; margin: 0; padding: 0; border: none; background: transparent; text-indent: -50em; vertical-align: middle;}
+.sidebar form input {width: 205px; height: 22px; margin: 0; padding: 0 5px; border: none; background: transparent; color: #888; line-height: 22px; vertical-align: middle;}
+
+/* post styles
+------------------------------------------ */
+#portfolio .post{
+	float: left;
+	margin: 0 3px 10px 3px;
+	width: 300px;
+	height: 162px;
+}
+	#portfolio .post img{
+		height: 100%;
+		width: 100%;
+		border: 1px solid #eee;
+		opacity:0.8;
+		-moz-transition:opacity 1s linear;
+		-webkit-transition:opacity 1s linear;
+	}
+		#portfolio .post img:hover{
+			opacity:1;
+		}
+		
+#portfolio h1#latest-work span{
+	font-size: 0.7em;
+	text-transform: lowercase;
+}
+
+.page {clear: both; margin-bottom: 30px;}
+.post h2, .page h2 {margin: 0 0 5px; padding: 0 10px 8px; background: url("images/headers.png") -1875px bottom no-repeat;}
+.sticky h2 {background-position: -1250px bottom;}
+p.post-meta {margin: 0; padding: 0 10px; color: #aaa; line-height: 20px;}
+p.post-meta span {padding: 3px 0 3px 25px; background: url("images/icons.png") no-repeat; line-height: 20px;}
+p.post-meta span.date {background-position: 3px -1px;}
+p.post-meta span.author {background-position: 3px -22px;}
+p.post-meta span.cats {background-position: 3px -42px;}
+p.post-meta span.comments {background-position: 3px -63px;}
+p.tags {float: left; width: 500px; margin-top: 0.5em; margin-bottom: 5px; font-size: 0.917em;}
+p.tags span {padding: 3px 0 3px 25px; background: url("images/icons.png") 0 -80px no-repeat;}
+p.more {float: right; margin-top: 0;  margin-bottom: 5px; padding-left: 20px; }
+p.more a {float: right; overflow: hidden; width: 24px; height: 25px; padding: 0; background: url("images/read-more.png") 0 0 no-repeat; text-indent: -90em;}
+p.more a:hover {background-position: 0 -25px;}
+.post img.attachment-post-thumbnail {float: left; margin: 10px 10px 10px 0;}
+.main.single h1 {margin-bottom: 0; background: url("images/headers.png") -1875px bottom no-repeat;}
+.main.single p.post-meta {margin: 0.5em 0 2em;}
+
+/* comments
+------------------------------------------ */
+.comments {clear: both;}
+ul.commentlist {margin: 1em 0;}
+ul.commentlist li {overflow: hidden; margin: 0; padding: 15px 0; border-bottom: 1px solid #d2d2d2; background: url("images/headers.png") 0 25px no-repeat;}
+ul.commentlist li.odd {background-position: -625px 25px;}
+ul.commentlist li li {clear: both; margin-left: 20px;}
+ul.commentlist ul {clear: both;}
+ul.commentlist li .comment-author {padding: 0 5px;}
+img.avatar {float: left; margin: 0 10px 0 0; padding: 2px; border: 1px solid #e6e6e6; background: #fff;}
+.reply {float: right; overflow: hidden; }
+.reply a {float: right; padding-left: 20px; background: url("images/icons.png") 0 -64px no-repeat;}
+ul.commentlist li .comment-body ul {margin: 1em 0; list-style: disc;}
+ul.commentlist li .comment-body ol {margin: 1em 0; list-style: decimal;}
+ul.commentlist li .comment-body li {overflow: visible; margin: 0 0 0 20px; padding: 0; border: none; background: transparent;}
+.comments label {float: left; width: 150px;}
+
+/* misc
+------------------------------------------ */
+.clear {height: 0; clear: both; float: none; overflow: hidden;}
+.alignleft {float: left; margin: 5px 20px 5px 0; padding: 0; }
+.alignright {float: right; margin: 5px 0 5px 20px; padding: 0; }
+.aligncenter {display: block; margin: 1em auto; text-align: center;}
+.wp-caption-text {margin: 0.5em 0; color: #666; font-size: 0.917em;}
+.nocomments {clear: both; color: #666;}
+img.size-thumbnail {margin: 5px;}
+a.post-edit-link {font-size: 0.9em;}
+img {margin: 0; height: auto;}
+embed {max-width: 615px;}
+
+.gallery {overflow: hidden; padding: 1.5em 0;}
+.gallery dl {text-align: center;}
+.gallery dl dt {float: none; width: auto;}
+.gallery dl dd {clear: left; width: auto; margin: 0; text-align: center;}
+.gallery a img, .gallery a img[class] {padding: 2px; border: 1px solid #e6e6e6; background: transparent;}
+[id*="gallery"] img {border: 1px solid #e6e6e6;}
+
+.wp-caption, .gallery-caption {max-width: 603px; padding: 5px; border: 1px solid #ddd; background: #eff4fc; color: #666; text-align: center;}
+
+p.pagination {overflow: hidden;clear:both; padding-top: 10px;}
+p.pagination a {background: url("images/icons.png") no-repeat; font-weight: bold;}
+p.pagination a:hover {color: #000; text-decoration: none;}
+p.pagination .prev a {float: left; height: 20px; padding: 0 0 0 25px; background-position: 0 -120px; line-height: 20px;}
+p.pagination .next a {float: right; height: 20px; padding: 0 25px 0 0; background-position: 100% -100px; line-height: 20px;}
+p.pages {clear: both;}
+
+p label {display: inline; margin-bottom: 0;}
+p.comment-form-comment label {display: block; float: left;}
+.main h3, .main h2 {clear: both;}
+
+.gallery-caption {position: static;}
+.bypostauthor {position: static;}
