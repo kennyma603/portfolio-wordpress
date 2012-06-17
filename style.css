@@ -86,9 +86,27 @@ button, input[type="submit"] {height: 24px; padding: 0 15px; border: 1px solid #
 .cf {
     zoom:1;
 }
-
+.zoom-able{overflow: hidden;}
+.zoom-able img{
+        -webkit-transition: -webkit-transform .4s linear;
+        -moz-transition: -moz-transform .4s linear;
+        -o-transition: -o-transform .4s linear;
+        transition: transform .4s linear;	
+}
+	.zoom-able img:hover{
+		-moz-transform: rotate(-3deg) scale(1.1);
+		-webkit-transform: rotate(-3deg) scale(1.1);
+		-o-transform: rotate(177deg) scale(1.1);
+		transform: rotate(-3deg) scale(1.1);
+	}
 .left{float: left;}
 .right{float: right;}
+.info{
+    background: #EBF5FA;
+    border-top: 2px solid #D2DCE1;	
+	border-bottom: 2px solid #D2DCE1;	
+	padding: 10px 0;
+}
 
 .blue-button{
 	
@@ -194,18 +212,17 @@ body { width: 100%; background: #fff;}
 }
 .Portfolio .imageWrapper{
 	width: 458px;
+	height: 230px;
+	border: 1px solid #cecece;
 	float: left;
 	overflow: hidden;
 }
 	.Portfolio .imageWrapper img{
 		width: 100%;
-		border: 1px solid #cecece;
 	}
 	
 .top-note{
 	margin-bottom: 30px;
-	border-bottom: 2px solid #6C97D0;
-	padding: 0 0 10px 0;
 }
 	.top-note .note{
 		margin-left: 25px;

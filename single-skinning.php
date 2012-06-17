@@ -1,9 +1,9 @@
 <div class="main single">
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 	
-		<div class="top-note cf">
-			<div class="thumb left">
-				<?php the_post_thumbnail(); ?>
+		<div class="top-note cf info">
+			<div class="thumb left zoom-able">
+				<?php the_post_thumbnail(array(300,162)); ?>
 			</div>
 			<div class="note left">
 				<p>I skinned this site using HTML, CSS and Javascript, on top of ASP.NET.</p>
@@ -37,7 +37,7 @@
 			if ( $attachments ) {
 				foreach ( $attachments as $attachment ) {
 					$full_img_url = wp_get_attachment_image_src( $attachment->ID, 'full' );
-					echo '<div class="imageWrapper"><a href="' . $full_img_url[0] .'">' 
+					echo '<div class="imageWrapper zoom-able"><a href="' . $full_img_url[0] .'">' 
 						.wp_get_attachment_image( $attachment->ID, 'medium' ) . "</a></div>";
 				}
 			}		
